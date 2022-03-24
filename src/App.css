@@ -1,8 +1,8 @@
 :root {
-  --primary: red;
-  --secondary: blue;
-  --dark: black;
-  --light: purple;
+  --primary: rgb(0, 119, 255);
+  --secondary: red;
+  --dark: rgb(40, 195, 195);
+  --light: white;
 }
 
 * {
@@ -65,6 +65,17 @@ button:hover {
 
 .operators button {
   flex: 1 1 0%;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   font-weight: 700;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers button {
+  flex: 1 1 33.3%;
+  max-width: 33.3%;
+  background-color: var(--light)
 }
