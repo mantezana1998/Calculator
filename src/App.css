@@ -1,7 +1,70 @@
+:root {
+  --primary: red;
+  --secondary: blue;
+  --dark: black;
+  --light: purple;
+}
+
 * {
-  margin-left: 15%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary)
 }
 
 .app {
-  background-color: red;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px pink;
+}
+
+.display {
+  padding: 16px; 
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.display span {
+  font-size: 30px;
+  color: white;
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.operators {
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 0%;
+  background-color: var(--primary);
+  font-weight: 700;
 }
